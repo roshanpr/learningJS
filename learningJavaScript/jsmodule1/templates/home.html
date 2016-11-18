@@ -21,12 +21,12 @@
 
 				// document.write("Total tax is: ", totalTax)
 
-				var degFar = prompt("Enter the degrees in Farenheit", 50)
-				var degCent;
+				// var degFar = prompt("Enter the degrees in Farenheit", 50)
+				// var degCent;
 
 
-				degCent = 5/9 * (degFar -32)
-				document.write(degFar + "\xB0 Farenheit is " + degCent.toFixed(2) + "\xB0 Celsius " + "<br>");
+				// degCent = 5/9 * (degFar -32)
+				// document.write(degFar + "\xB0 Farenheit is " + degCent.toFixed(2) + "\xB0 Celsius " + "<br>");
 
 
 				// if (degCent > 33) {
@@ -40,14 +40,20 @@
 				// 	document.write ("Normal temperature:  " + degCent.toFixed(2))
 				// }
 				
-				var sum = 0;
+				// var sum = 0;
 
-				for (var i =0; i<10; i++){
+				// for (var i =0; i<10; i++){
 
-					sum += i;
-				}
+				// 	sum += i;
+				// }
 
-				document.write(sum);
+				// document.write(sum + "<br>");
+
+				myArray = ["Roshan", "Maumita", "Rakesh", "Cookie", "Aiden"];
+
+				// for (var i=0; i<4; i++){
+				// 	document.write(myArray[i] + "<br>")
+				// }
 
 
 				// someNumber = "346.476"
@@ -60,12 +66,56 @@
 
 				// document.write(myArray[0])
 
+				// for (var eachIndex in myArray){
+				// 	document.write(myArray[eachIndex] + "<br>");
+				// }
 
+				// var movie = {"name": "Bourne Identity",
+				// 			"actor": "Matt Damon",
+				// 			"year": "2008",
+				// 			"box_office": 20000000
+				// 		}
+				// document.write(movie["name"])
+
+				// document.write(movie.year)
+
+				// var sayMyName = function() {
+				// 	document.write("This is a function call");
+				// }
+
+				// // Trying to output the result of a function by specifying the function directly as a parameter does not work. 
+				// document.write(sayMyName)
+
+				// //The result of the function has to be saved in a variable and then printed
+				// name = sayMyName()
+				// document.write(name)
+
+				var fizzBuzz = function(x) {
+
+					for (var i =1; i<=x; i++){
+
+					    if (((i % 3)==0) && ((i % 5)==0)){
+					        document.write("FizzBuzz" + "<br>")
+					    } else if ((i % 3) ==0){
+					    	document.write("Fizz" + "<br>")
+					    } else if ((i % 5) ==0){
+					    	document.write("Buzz" + "<br>")
+					    } else {
+					    	document.write(i + "<br>")
+					    }
+					}
+				}
+
+				fizzBuzz(15)
 
 
 			</script>
 
+			<script>
 
+				fizzBuzz(20)
+
+			</script>
 
 		</body>
 </html>
