@@ -90,52 +90,90 @@
 				// name = sayMyName()
 				// document.write(name)
 
-				var fizzBuzz = function(x) {
+				// var fizzBuzz = function(x) {
 
-					for (var i =1; i<=x; i++){
+				// 	for (var i =1; i<=x; i++){
 
-					    if (((i % 3)==0) && ((i % 5)==0)){
-					        document.write("FizzBuzz" + "<br>")
-					    } else if ((i % 3) ==0){
-					    	document.write("Fizz" + "<br>")
-					    } else if ((i % 5) ==0){
-					    	document.write("Buzz" + "<br>")
-					    } else {
-					    	document.write(i + "<br>")
-					    }
-					}
-				}
+				// 	    if (((i % 3)==0) && ((i % 5)==0)){
+				// 	        document.write("FizzBuzz" + "<br>")
+				// 	    } else if ((i % 3) ==0){
+				// 	    	document.write("Fizz" + "<br>")
+				// 	    } else if ((i % 5) ==0){
+				// 	    	document.write("Buzz" + "<br>")
+				// 	    } else {
+				// 	    	document.write(i + "<br>")
+				// 	    }
+				// 	}
+				// }
 
-				fizzBuzz(15)
+				// fizzBuzz(15)
 
 
 			</script>
 
 			<script>
 
-				function toCentigrade(degF){
+				//Funtions can take other functions as arguments. 
 
-					var degC = 5/9 * (degF - 32);
-					document.write(degF + " Farenheit is " + degC.toFixed(2) + " Celsius.<br/>")
-				}
+				// function toCentigrade(degF){
 
-				function toFarenheit(degC){
+				// 	var degC = 5/9 * (degF - 32);
+				// 	document.write(degF + " Farenheit is " + degC.toFixed(2) + " Celsius.<br/>")
+				// }
 
-					var degF = 9/5 * degC + 32
-					document.write(degC + " Celsius is " + degF.toFixed(2) + " Farenheit.<br/>")
-				}
+				// function toFarenheit(degC){
 
-				toCentigrade(90)
-				toFarenheit(32)
+				// 	var degF = 9/5 * degC + 32
+				// 	document.write(degC + " Celsius is " + degF.toFixed(2) + " Farenheit.<br/>")
+				// }
 
-				function convert(someFunction, temperature){
-					someFunction(temperature);
-				}
+				// toCentigrade(90)
+				// toFarenheit(32)
 
-				convert(toCentigrade, 90)
-				convert(toFarenheit, 27)
+				// function convert(someFunction, temperature){
+				// 	someFunction(temperature);
+				// }
+
+				// convert(toCentigrade, 90)
+				// convert(toFarenheit, 27)
 
 			</script>
+
+	
+		// <script>
+
+		// 			var dateToday = new Date ("17 Nov 2016")
+		// 			document.write("Today is : " + dateToday)
+
+					
+		// 	</script>	
+
+		// <script>
+
+		// 	var filePath = window.location.href
+
+		// 	var fileName = filePath.substr(filePath.lastIndexOf(":")+1)
+
+		// 	document.write(fileName)
+
+
+		// </script>
+
+		<script>
+
+			function geoLoc(currentPosition){
+				var coordinates = currentPosition.coords;
+				var lat = coordinates.latitude.toFixed(3);
+				var lon = coordinates.longitude.toFixed(3);
+
+				var message = "You are at: " + lat + " and " + lon
+				document.write(message)
+			}
+
+			navigator.geolocation.getCurrentPosition(geoLoc)
+
+		</script>
+
 
 		</body>
 </html>
